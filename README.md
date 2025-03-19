@@ -63,7 +63,7 @@ poetry install
 ```
 
 ### 4. Configure Environment Variables
-- Create a `.env` file in the project's root directory.
+- Rename the `.env.example` file in the project's root directory to `.env`.
 - Add your API keys:
 ```env
 OPENAI_API_KEY=<your_openai_api_key>
@@ -90,7 +90,3 @@ To ensure the agents' outputs are accurate and consistent:
 
 ## 📄 License & Contributions
 - This project is intended for educational and research purposes.
-- Feel free to contribute or raise issues for improvements.
-
-If you need any further assistance or encounter issues, don't hesitate to reach out!
-
