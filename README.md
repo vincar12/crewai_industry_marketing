@@ -90,7 +90,3 @@ To ensure the agents' outputs are accurate and consistent:
 
 ## 📄 License & Contributions
 - This project is intended for educational and research purposes.
-- Feel free to contribute or raise issues for improvements.
-
-If you need any further assistance or encounter issues, don't hesitate to reach out!
-
