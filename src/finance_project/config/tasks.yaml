@@ -1,0 +1,52 @@
+research_task:
+  description: >
+    Conduct a thorough market research about the **{industry}** industry.  
+    Specifically search for **marketing campaigns, consumer sentiment, digital strategies, brand positioning, and innovations**.  
+    Source from **news articles, industry reports, public datasets, press releases, and reputable online sources**.  
+    Use the **dataset search tool** to find **structured data** that can provide quantitative insights.  
+    Validate data for accuracy and ensure information is **current** and relevant to the date **{current_date}**.  
+    Provide a **structured output** with three main sections:  
+    - **Raw Data:** Unprocessed data, quotes, campaign details, raw datasets.  
+    - **Key Findings:** Summarized insights, highlighting innovative practices.  
+    - **Sources:** Complete citations for verification.  
+  expected_output: >
+    A structured dataset or document containing **raw data, key findings, and sources**.  
+    If structured datasets are found, include the dataset links or brief descriptions.  
+    The output should be **organized but not yet analyzed**.
+  agent: market_researcher
+
+
+analysis_task:
+  description: >
+    Load **market_research_task_output.md**. Validate the data before analysis.
+    Perform **statistical analysis, trend detection, or NLP (sentiment & keyword analysis)** on the collected data.  
+    Identify patterns in **marketing strategies from competitors and industry leaders**.  
+    If **structured datasets** are available, use them for quantitative analysis, charts, and graphs.  
+    Evaluate **consumer engagement, brand perception, and advertising performance**.  
+    Cross-reference findings with the **raw data** to ensure accuracy.  
+    Create charts, graphs, or other visualizations if the data collected has the appropriate data for visualizations.  
+    Expand on each key finding and organize them into sections for a detailed report.  
+  expected_output: >
+    A **structured markdown report** containing insights, categorized by key marketing trends.  
+    The report should have **headings, bullet points, and detailed explanations**.  
+    **Contains charts or visualizations if possible.**
+  agent: data_analyst
+
+
+report_task:
+  description: >
+    Load **data_analysis_report.md**
+    Take structured insights from the **data analyst** and turn them into a **professionally formatted marketing trends report**.  
+    Summarize key takeaways and highlight **actionable insights**.  
+    Use only the analyzed insights—**do not introduce new data**.  
+    Compile a visually appealing report with **charts, figures, and structured sections**.  
+    Ensure readability for **decision-makers**.  
+    Format for **PDF export or dashboard presentation** as needed.  
+  expected_output: >
+    A final, well-structured report including:  
+    - **Executive Summary:** Concise overview of the key findings.  
+    - **Detailed Insights:** Organized into sections based on analysis.  
+    - **Charts & Graphs:** Visual representations of trends, if available.  
+    - **Actionable Recommendations:** Practical applications for stakeholders.  
+    **Format:** Clean, structured markdown ready for conversion to PDF or a dashboard.
+  agent: report_generator

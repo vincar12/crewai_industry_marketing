@@ -1,0 +1,25 @@
+# Python Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Poetry Files
+poetry.lock
+
+# Virtual Environment
+.env
+.vscode/
+*.log
+
+# OS-specific Files
+.DS_Store
+Thumbs.db
+
+# Markdown Outputs (if generated automatically)
+data_analysis_report.md
+final_report.md
+market_research_task_output.md
+
+# Test Outputs
+/tests/__pycache__/
