@@ -63,7 +63,7 @@ poetry install
 ```
 
 ### 4. Configure Environment Variables
-- Create a `.env` file in the project's root directory.
+- Rename the `.env.example` file in the project's root directory to `.env`.
 - Add your API keys:
 ```env
 OPENAI_API_KEY=<your_openai_api_key>
